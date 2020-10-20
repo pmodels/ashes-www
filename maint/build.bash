@@ -14,6 +14,6 @@ for ss in $subsites; do
 	pushd $ss
 		bundle exec jekyll build
 	popd
-	cp -rf $ss/_site/ $subdest
+	cp -rf $ss/_site/* $subdest
 done
 bundle exec htmlproofer $maindest --disable-external
