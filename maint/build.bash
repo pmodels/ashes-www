@@ -8,7 +8,6 @@ rm -rf $maindest
 mkdir -p $maindest
 cp index.html $maindest
 bundle exec jekyll build
-cp -rf _site/* $maindest
 
 for ss in $subsites; do
 	subdest=$maindest/$ss
