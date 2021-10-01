@@ -34,11 +34,16 @@ jobs:
       
     - name: Build site
       run: ./maint/build.bash
-      
+
+    - name: Expose git commit data
+      uses: rlespinasse/git-commit-data-action@v1.x
+
     - name: Deploy site
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_CONFIG_NAME: ${{ env.GIT_COMMIT_AUTHOR_NAME }}
+          GIT_CONFIG_EMAIL: ${{ env.GIT_COMMIT_AUTHOR_EMAIL }}
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: _site # The folder the action should deploy.
           CLEAN: true # Automatically remove deleted files from the deploy branch

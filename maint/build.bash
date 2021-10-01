@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
-subsites=2021
+subsites="2021 2022"
 maindest=./_site
 
 rm -rf $maindest
