@@ -21,7 +21,7 @@
 title: AsHES 2022 Workshop
 email: ashes@mcs.anl.gov
 description: >- # this means to ignore newlines until "baseurl:"
-# The Eleventh International Workshop on Accelerators and Hybrid Emerging Systems (AsHES)
+# The Twelfth International Workshop on Accelerators and Hybrid Emerging Systems (AsHES)
 # to be held in conjunction with 36th IEEE International Parallel and Distributed
 # Processing Symposium in Lyon, France (May 30 - June 3, 2022).
 baseurl: "/2022" # the subpath of your site, e.g. /blog
