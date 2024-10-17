@@ -11,6 +11,46 @@ If you need permisison to access [gitlab](https://gitlab.com/pmodels/websites/as
 
 ## How to Modify
 The following steps use the 2021 edition as the example.
+This is a Jekyll site, so you need ruby.
+
+### Setting up a ruby environment (Ubuntu 22.04 LTS)
+
+```bash
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
+# This will modify your .bashrc!
+~/.rbenv/bin/rbenv init
+```
+
+get a new shell so rbenv works
+
+```bash
+# install this plugin so `rbenv install` works
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+
+# install prerequisite build libraries
+apt-get install autoconf patch build-essential rustc libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libgmp-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev uuid-dev
+
+#install a ruby
+rbenv install 3.3.5
+
+# set the ruby to be the one used for this project
+rbenv local 3.3.5
+```
+
+get a new shell
+
+```bash
+ruby --version
+
+# this may give an error about things not being installed. Follow the directions to install the missing packages
+cd 2025
+bundle exec jekyll serve
+```
+
+navigate to localhost:4000/2025/index.html in your browser and you should see the site
+
+### Getting Jekyll
 
 - `git clone git@github.com:pmodels/ashes-www.git ashes-www/`
 - Follow **quickstart** at https://jekyllrb.com/docs/ to create a local Jekyll environment under `ashes-www/2021`
@@ -24,3 +64,5 @@ at [./maint/build.bash](https://github.com/pmodels/ashes-www/blob/master/maint/b
 and builds the static html files for each of them.
 
 For every newly added subsite, please add the folder name in `build.bash`.
+
+## Setting
