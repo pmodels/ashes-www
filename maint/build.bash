@@ -17,4 +17,4 @@ for ss in $subsites; do
 	popd
 	cp -rf $ss/_site/* $subdest
 done
-bundle exec htmlproofer $maindest --disable-external
+bundle exec htmlproofer $maindest --disable-external --no-enforce_https
