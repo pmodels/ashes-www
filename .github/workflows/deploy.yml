@@ -39,6 +39,7 @@ jobs:
       uses: rlespinasse/git-commit-data-action@v1.x
 
     - name: Deploy site
+      if: github.ref == 'refs/heads/master'
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
