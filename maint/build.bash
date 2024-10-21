@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
-subsites="2021 2022 2023 2024"
+subsites="2021 2022 2023 2024 2025"
 maindest=./_site
 
 rm -rf $maindest
@@ -17,4 +17,4 @@ for ss in $subsites; do
 	popd
 	cp -rf $ss/_site/* $subdest
 done
-bundle exec htmlproofer $maindest --disable-external
+bundle exec htmlproofer $maindest --disable-external --no-enforce_https

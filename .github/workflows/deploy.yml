@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       
     - name: Set up Ruby
     # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
@@ -27,7 +27,7 @@ jobs:
       uses: ruby/setup-ruby@v1
     # uses: ruby/setup-ruby@ec106b438a1ff6ff109590de34ddc62c540232e0
       with:
-        ruby-version: 2.6
+        ruby-version: 3.3
 
     - name: Install dependencies
       run: bundle install
@@ -39,6 +39,7 @@ jobs:
       uses: rlespinasse/git-commit-data-action@v1.x
 
     - name: Deploy site
+      if: github.ref == 'refs/heads/master'
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
