@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="style/general.css" rel="stylesheet" type="text/css">
+    <title>AsHES Workshop</title>
+  </head>
+
+  <body>
+  <div id="main-frame">
+  <!--<div id=heading style="background-image: url(pics/head_bkground.png)">-->
+  <div id="heading">
+    <br>
+    <table style="width:100%">
+      <tr>
+        <td width="30%" border="1"></td>
+        <td width="60%" align="center">
+          <div id="title" align="center">
+            The Fifteenth International Workshop on
+            <br>Accelerators and Hybrid Emerging Systems
+            <br> (AsHES)
+            <br>
+          </div>
+
+          <div id="subtitle" align="center">
+            <br> To be held in conjunction with
+            <br><font color="#FFF" style="font-weight: bold;" >39th IEEE International Parallel and Distributed Processing Symposium
+            <br> Milan, Italy
+	    <br> Date TBD, 2025</font>
+          </div>
+        </td>
+      	<td width=“10%”><div align="left"><a href="http://www.ipdps.org">
+            <img src="pics/ipdps2025-logo-300.jpg" border="1" width="250" alt="IPDPS 2025 logo"/></a></div>
+        </td>
+      </tr>
+      <tr valign="bottom">
+        <td colspan="3"><br/>
+          <div id="topnavigation">
+            <ul>
+              <li><a href="index.html" class="rborder">HOME</a></li>
+              <li><a href="organizers.html" class="rborder lborder">ORGANIZERS</a></li>
+              <li><a href="cfp.html" class="rborder lborder">CALL FOR PAPERS</a></li>
+              <li><a href="reg.html" class="rborder lborder">REGISTRATION</a></li>
+              <li><a href="program.html" class="rborder lborder">PROGRAM</a></li>
+              <li><a href="submission.html" class="rborder lborder">SUBMISSION</a></li>
+              <li><a href="contact.html" class="lborder">CONTACT US</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div> <!-- End of heading -->
+
+  <div style="color: red; text-align: center; font-size: 6rem;">Under Constrution</div>
+<div id="sub-frame">
+  <div class="midBox1">
+    <h1>Opening Remarks</h1>
+    <h3>10:30 am - 10:40 am</h3>
+
+    <h1>Session 1: High-Performance Computing</h1>
+    <h3>10:40 am - 12:00 pm</h3>
+    <h3>Session Chair: Shintaro Iwasaki, Meta</h3>
+    <ul>
+      <li>
+        10:40 am - 11:00 am<br/>
+        <b>Performance Versus Maintainability: A Case Study of Scream on Frontier</b><br/>
+        James White
+      </li>
+      <li>
+        11:00 am - 11:30 am<br/>
+        <b>ParaGraph: Weighted Graph Representation for Performance Optimization of HPC Kernels</b><br/>
+        Ali Tehranijamsaz, Alok Mishra, Akash Dutta, Abid M. Malik, Barbara Chapman, and Ali Jannesari
+      </li>
+      <li>
+        11:30 am - 12:00 pm<br/>
+        <b>Alternative Quadrant Representations with Morton Index and AVX2 Vectorization for AMR Algorithms within the p4rest Software Library</b><br/>
+        Mikhail Kirilin and Carsten Burstedde
+      </li>
+    </ul>
+
+    <h2>Lunch Break</h2>
+    <h3>12:00 pm - 1:00 pm</h3>
+    <ul>
+      <li>
+        Lunch will not be provided by the conference.
+      </li>
+    </ul>
+
+    <h1>Keynote</h1>
+    <h3>1:00 pm - 2:00 pm</h3>
+    <h4><b>Block-based GPU Programming with Triton</b></h4>
+    <h4><b>Philippe Tillet, OpenAI</b></h4>
+    <h4><b>Abstract:</b>
+    <font color="#FFFFFF"><img src="pics/PhilippeTillet.jpeg" alt="Philippe Tillet" border="1" align="right" class="right" width="30%" height="auto"/></font>
+    Traditional single instruction, multiple threads (SIMT) programming with CUDA can be daunting to machine learning researchers in need of fast custom kernels. This can significantly slow down the evaluation of novel research ideas that cannot be neatly decomposed into a set of pre-built, vendor-optimized primitives. In this talk, we will shed light on an alternative programming model which -- while relatively high-level -- aims to be more expressive than common graph-compilers (e.g., XLA, Torch-Inductor) and enable the use of custom data-structures (e.g., linked list, block-sparse tensors, etc.). We will specifically discuss the design and implementation of Triton, a mid-level programming language that uses block-based abstractions to simplify kernel development for researchers without deep GPU programming expertise.
+    </h4>
+    <h4><b>Bio:</b>
+      Philippe Tillet first began working with GPUs in 2011 as a contributor to the ViennaCL library. He then received his B.S. from Telecom SudParis (France) in 2012, his M.S. from NCTU (Taiwan) in 2014, and his Ph.D. from Harvard University in 2020. He joined OpenAI full time in 2020 to pursue his work on the Triton compiler — a project he started in 2018 after being frustrated by the difficulty of writing auto-tuners for matrix multiplications in CUDA. Since then, he grew the Triton language into a reference for block-based programming model, and used it to write all the training kernels that were used by GPT4.
+    </h4>
+
+    <h1>Session 2: Accelerating AI/ML Workloads</h1>
+    <h3>2:00 pm - 3:10 pm</h3>
+    <h3>Session Chair: Carl Pearson, Sandia National Laboratories</h3>
+    <ul>
+      <li>
+        2:00 pm - 2:30 pm<br/>
+        <b>Avoiding Training in the Platform-Aware Optimization Process for Faster DNN Latency Reduction</b><br/>
+        Raúl Marichal, Ernesto Dufrechou, and Pablo Ezzatti
+      </li>
+      <li>
+        2:30 pm - 2:50 pm<br/>
+        <b>A Comparative Study on Simulation Frameworks for AI Accelerator Evaluation</b><br/>
+        Christoffer Åleskog, Håkan Grahn, and Anton Borg
+      </li>
+      <li>
+        2:50 pm - 3:10 pm<br/>
+        <b>Extending the SYCL Joint Matrix for Binarized Neural Networks</b><br/>
+        Zheming Jin
+      </li>
+    </ul>
+
+    <h1>Closing Remarks</h1>
+    <h3>3:10 pm - 3:20 pm</h3>
+
+    <h2>Presentation</h2>
+    All presentations will be in-person.
+    Presenters are expected to target 25 minutes (full papers) or 15 minutes (short papers) for the talks with 5 minutes for questions.
+  </div>
+</div>
+
+
+  <div id="footer">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div id="bottomnavigation">
+      <a href="index.html">home</a>
+      : <a href="organizers.html">organizers</a>
+      : <a href="cfp.html">call for papers</a>
+      : <a href="reg.html">registration</a>
+      : <a href="program.html">program</a>
+      : <a href="submission.html">submission</a>
+      : <a href="contact.html">contact us</a>
+    </div>
+
+    <div id="copyright">
+      <p>Copyright &copy; AsHES. All rights reserved.</p>
+    </div>
+  </div> <!-- End of footer -->
+  </div> <!-- End of main-frame -->
+  </body>
+</html>
