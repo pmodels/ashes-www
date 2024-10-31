@@ -30,10 +30,10 @@ img.right {
 h1 {
   font-size: 14px;
   color: white;
-
-  /* 2024 color */
-  background-color: #31328b;
-
+  
+  /* 2025 color */
+  background-color: #688097;
+  
   margin: 20px 0px 10px 0px;
   padding: 8px 0px 0px 10px;
   height: 25px;
@@ -128,8 +128,8 @@ bold {
   background-repeat: no-repeat;
   background-size: 25%;
 
-  /* 2024 color */
-  background-color: #31328b;
+  /* 2025 color */
+  background-color: #688097;
 }
 
 
@@ -138,9 +138,8 @@ bold {
 #topnavigation {
   height:35px;
 
-  /* 2024 color */
-  background-color: #c3584e;
-
+  /* 2025 color */
+  background-color: #b7d27e;
   color:#ffffff;
   font-size:12px;
   line-height:18px;
@@ -159,16 +158,19 @@ bold {
   padding:6px 35px 6px 35px;
 }
 
+/* 2025 color */
 #topnavigation a:hover {
-  background-color:#754255;
+  background-color:#819b4b;
 }
 
+/* 2025 color */
 #topnavigation .rborder {
-  border-right:1px solid #754255;
+  border-right:1px solid #4f677d;
 }
 
+/* 2025 color */
 #topnavigation .lborder {
-  border-left:1px solid #754255;
+  border-left:1px solid #4f767d;;
 }
 
 
@@ -178,8 +180,8 @@ bold {
   clear:both;
   height:24px;
 
-  /* 2024 color */
-  background-color: #31328b;
+  /* 2025 color */
+  background-color: #688097;
 
   color:#fff;
   text-align:center;
